@@ -16,7 +16,14 @@ def main():
 
 
 def lowercase(text):
-    text.lower(text)
+    character_counts = {}
+    lowercase_text = text.lower()
+    for lowercase_count in lowercase_text:
+        if lowercase_count in character_counts:
+            character_counts[lowercase_count] += 1
+        else:
+            character_counts[lowercase_count] = 1
+    return character_counts
 
 
 main()
