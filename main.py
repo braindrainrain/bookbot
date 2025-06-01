@@ -7,3 +7,7 @@ print(lower_text)
 print(f"''t': {character_counters['t']}'")
 print(f"''p': {character_counters['p']}'")
 print(f"''c': {character_counters['c']}'")
+sorted_character_counts = sorted_count_letters(character_counts)
+for char_data in sorted_character_counts:
+    if char_data["char"].isalpha():
+        print(f"{char_data["char"]}:{char_data["num"]}")

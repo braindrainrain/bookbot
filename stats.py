@@ -37,6 +37,4 @@ def sorted_count_letters(letters):
         character_dict = {"char": letter, "num": count_value}
         dict_list.append(character_dict)
     dict_list.sort(reverse=True, key=sort_on)
-
-
-return dict_list
+    return dict_list
