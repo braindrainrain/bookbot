@@ -1,3 +1,9 @@
-from stats import word_counter
-lowercase_complete_text = lowercase(book_text)
-print(f"{content} words found in the document")
+from stats import word_counter, lowercase, get_book_text, sorted_count_letters
+content = get_book_text("books/frankenstein.txt")
+word_count = word_counter(content)
+print(f"There are {word_count} words in the document.")
+lower_text = lowercase(content)
+print(lower_text)
+print(f"''t': {character_counters['t']}'")
+print(f"''p': {character_counters['p']}'")
+print(f"''c': {character_counters['c']}'")

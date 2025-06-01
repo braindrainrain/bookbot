@@ -26,4 +26,17 @@ def lowercase(text):
     return character_counts
 
 
-main()
+def sort_on(dict):
+    return dict["num"]
+
+
+def sorted_count_letters(letters):
+    dict_list = []
+    for letter in letters:
+        count_value = letters[letter]
+        character_dict = {"char": letter, "num": count_value}
+        dict_list.append(character_dict)
+    dict_list.sort(reverse=True, key=sort_on)
+
+
+return dict_list
